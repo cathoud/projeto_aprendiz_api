@@ -6,7 +6,6 @@ import {
   IsMobilePhone,
   IsNotEmpty,
 } from 'class-validator';
-import { MemberType } from 'src/member/enums/memberType';
 
 export class MemberDTO {
   @IsNotEmpty()
@@ -21,7 +20,4 @@ export class MemberDTO {
   @IsDate()
   @Type(() => Date)
   birthDate: Date;
-
-  @IsEnum(MemberType)
-  type: MemberType;
 }

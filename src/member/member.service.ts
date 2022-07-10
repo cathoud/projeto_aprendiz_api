@@ -14,7 +14,7 @@ import { MemberResponse } from './model/response/member.response';
 // import { AuthService } from 'src/auth/auth.service';
 // import { CreateAuthUserRequest } from 'src/auth/model/request/create.auth-user.request';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Member } from './entities/member';
+import { Member } from './entities/member.entity';
 import { Repository } from 'typeorm';
 
 @Injectable()

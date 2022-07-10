@@ -1,12 +1,10 @@
-import { Member } from 'src/member/entities/member';
-import { MemberType } from 'src/member/enums/memberType';
+import { Member } from 'src/member/entities/member.entity';
 
 export class MemberResponse {
   constructor(member: Member) {
     this.id = member.uuid;
     this.name = member.name;
     this.email = member.email;
-    this.type = member.type;
     this.phone = member.phone;
     this.birthDate = member.birthDate;
     this.active = member.active;
@@ -17,7 +15,6 @@ export class MemberResponse {
   id: string;
   name: string;
   email: string;
-  type: MemberType;
   phone: string;
   birthDate: Date;
   active: boolean;
